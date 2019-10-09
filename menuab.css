@@ -1,0 +1,200 @@
+body,html{
+  margin:0;
+  padding:0;
+  height:100%;
+  background:#e3dfd2;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+div.box{background:#e3dfd2; size: cover; padding-bottom: 60%}
+.wrap{
+  position:relative;
+  width: 85vmin; height:85vmin;
+  margin:0 auto;
+  background:inherit;
+  transform:scale(0.8) translateZ(0px) translateX(10vmax);
+  transition:transform .5s, opacity .5s;
+  margin-bottom: 30vh;
+}
+a{
+  position:absolute;
+  left:0; top:0;
+  width:47.5%; height:47.5%;
+  overflow:hidden;
+  transform:scale(.5) translateZ(0px);
+  background:#585247;
+}
+a div{
+  height:100%;
+  background-size:cover;
+  opacity:.5;
+  transition:opacity .5s;
+  border-radius:inherit;
+}
+a:nth-child(1){
+  border-radius:40vmin 0 0 0;
+  transform-origin: 110% 110%;
+  transition:transform .4s .15s;
+}
+a:nth-child(1) div{
+    background-image: url("Acad.png");
+    background-size: cover;
+    background-position: 5vmin 1vmin;
+}
+a:nth-child(2){
+  border-radius:0 40vmin 0 0;
+  left:52.5%;
+  transform-origin: -10% 110%;
+  transition:transform .4s .2s;
+}
+a:nth-child(2) div{
+    background-image: url("Cont.png");
+    background-size: cover;
+    background-position: -3vmin -17.5vmin;
+    background-position-x: -1em;
+    border-color: black;
+}
+a:nth-child(3){
+  border-radius:0 0 0 40vmin;
+  top:52.5%;
+  transform-origin: 110% -10%;
+  transition:transform .4s .25s;
+}
+a:nth-child(3) div{
+    background-image: url("Home.png");
+    background-size: cover;
+    background-position: -12vmin -25vmin;
+    border-color: black;
+}
+
+a:nth-child(4){
+  width:100%;height:100%;
+  left:22.5%; top:22.5%;
+  border-radius:50vmin;
+  box-shadow:0 0 0 5vmin #e3dfd2;
+  transform:scale(1);
+}
+a:nth-child(4) div{
+    background-image: url("Aboutcent.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+span:hover + .wrap, .wrap:hover, span:active + .wrap, .wrap:active{
+  transform:scale(.8) translateZ(0px);
+  opacity:1;
+}
+span:hover + .wrap a, .wrap:hover a, span:active + .wrap a, .wrap:active a{
+  transform:scale(1) translatez(0px);
+}
+a:hover div, a:active div{
+  opacity:1;
+  transform:translatez(0px);
+}
+
+div.footer{
+    background-color: #e3dfd2;
+    background-size: cover;
+    padding: 5vh;
+    border-top-color: #585247;
+    color: black;
+    border-top: 10px;
+    overflow: hidden;
+}
+
+.shad-stroke {
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+.parallaxed {
+    width: auto;
+    height:100vh;
+    padding-top:30vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallaxed::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+	background-image: url("parimg.jpg");
+	background-position-x: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+
+.parallaxed-2 {
+    width: auto;
+    height:100vh;
+    padding-top:10vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallaxed-2::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+	background-image: url("parimg2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+    background-position: right top;
+}
+.normal {
+    width: auto;
+    height:100vh;
+    padding-top:40vh;
+	background-image: url("norimg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    z-index: 2;
+    position: relative;
+    background-position: center;
+}
+
+.normal-2 {
+    width: auto;
+    height:100vh;
+    padding-top:30vh;
+	background-image: url("norimg2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+.content {
+	font-size: 26px;
+    margin: 0 auto;
+    padding: 4vw;
+    width: 50%;
+	background: rgb(175, 172, 172);
+}
+
+p{
+    font-family: "Montserrat";
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+div.maintext{
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+}
+  
+ textbox{
+   font-family: "Playfair Display";
+   font-size: 7vmax;
+}
