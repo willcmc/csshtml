@@ -4,6 +4,8 @@ body,html{
     height:100%;
     background:#e3dfd2;
     overflow-x: hidden;
+    perspective: 1px;
+    transform-style: preserve-3d;
 }
 
 div.box{background:#e3dfd2; size: cover;}
@@ -147,4 +149,26 @@ th{
 td{
     border-bottom: 1px solid #cccccc;
     background-color: azure;
+}
+
+div.maintext{
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+}
+
+textbox{
+  font-family: "Playfair Display";
+  font-size: 7vmax;
+  position: relative;
+  top:0;
+  left: 0;
+}
+
+infobox{
+  font-family: "Caveat Brush";
+  font-size: 2vmax;
+  position: relative;
+  top: 12vmin;
+  left:0;
 }

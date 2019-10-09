@@ -97,7 +97,7 @@ a:hover div, a:active div{
 div.footer{
     background-color: #e3dfd2;
     background-size: cover;
-    padding: 5vh;
+    padding-top: 15vh;
     border-top-color: #585247;
     color: black;
     border-top: 10px;
@@ -189,12 +189,23 @@ p{
 }
 
 div.maintext{
-    position: absolute;
+    position: fixed;
     top: 3vh;
     left: 3vw;
 }
-  
- textbox{
-   font-family: "Playfair Display";
-   font-size: 7vmax;
+
+textbox{
+  font-family: "Playfair Display";
+  font-size: 7vmax;
+  position: relative;
+  top:0;
+  left: 0;
+}
+
+infobox{
+  font-family: "Caveat Brush";
+  font-size: 2vmax;
+  position: relative;
+  top: 12vmin;
+  left:0;
 }

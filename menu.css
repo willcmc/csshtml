@@ -109,4 +109,15 @@ div.maintext{
 textbox{
   font-family: "Playfair Display";
   font-size: 7vmax;
+  position: relative;
+  top:0;
+  left: 0;
+}
+
+infobox{
+  font-family: "Caveat Brush";
+  font-size: 2vmax;
+  position: relative;
+  top: 12vmin;
+  left:0;
 }
