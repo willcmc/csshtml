@@ -6,13 +6,15 @@ body,html{
   }
   div.box{background:#e3dfd2; size: cover;}
   .wrap{
-    position:relative;
-    width: 85vmin; height:85vmin;
-    margin:0 auto;
-    background:inherit;
-    transform:scale(0.8) translateZ(0px) translateX(10vmax);
-    transition:transform 0.5s, opacity 0.5s;
-  
+   position:relative;
+   width: 80vmin; height:80vmin;
+   margin:0 auto;  
+   background:inherit;
+   transform:scale(0.8) translateZ(0px) translateX(10vmax);
+   transition:transform 0.5s, opacity 0.5s;
+   float: top;
+   z-index: 3;
+   margin-left: 37vmin;
   }
   a{
     position:absolute;
@@ -78,12 +80,12 @@ body,html{
       background-position: 8vmin center;
   }
   
-  span:hover + .wrap, .wrap:hover, span:active + .wrap, .wrap:active{
+  .wrap:hover, .wrap:active{
     transform:scale(.8) translateZ(0px);
     opacity:1;
   }
-  span:hover + .wrap a, .wrap:hover a, span:active + .wrap a, .wrap:active a{
-    transform:scale(1) translatez(0px);
+  .wrap:hover a, .wrap:active a{
+    transform:scale(1) translateZ(0px);
   }
   a:hover div, a:active div{
     opacity:1;
