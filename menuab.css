@@ -113,48 +113,24 @@ div.footer{
   }
 
 .parallaxed {
-    width: auto;
-    height:100vh;
-    padding-top:30vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-}
-.parallaxed::before {
-    content:"";
-    width: 100vw;
-    height: 100vh;
-    top:0;
-    left:0;
-	background-image: url("parimg.jpg");
-	background-position-x: right;
-	background-size: cover;
-	background-repeat: no-repeat;
-    position: absolute;
-    z-index: -1;
-    transform:translateZ(-1px) scale(2);
+  position: relative;
+  margin-top: 0;
+  background-image: url("parimg.jpg");
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  padding-top: 20vmin;
 }
 
 .parallaxed-2 {
-    width: auto;
-    height:100vh;
-    padding-top:10vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
+  margin-top: 0;
+  background-image: url("parimg2.jpg");
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  padding-top: 20vmin;
 }
-.parallaxed-2::before {
-    content:"";
-    width: 100vw;
-    height: 100vh;
-    top:0;
-    left:0;
-	background-image: url("parimg2.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-    position: absolute;
-    z-index: -1;
-    transform:translateZ(-1px) scale(2);
-    background-position: right top;
-}
+
 .normal {
     width: auto;
     height:100vh;
@@ -167,16 +143,6 @@ div.footer{
     background-position: center;
 }
 
-.normal-2 {
-    width: auto;
-    height:100vh;
-    padding-top:30vh;
-	background-image: url("norimg2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-    z-index: 2;
-    position: relative;
-}
 .content {
 	font-size: 26px;
     margin: 0 auto;
