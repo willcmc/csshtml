@@ -94,13 +94,14 @@ a:hover div, a:active div{
 }
 
 div.footer{
+    position: aboslute;
+    bottom: 0px;
     background-color: #e3dfd2;
     background-size: cover;
     padding: 5vh;
     border-top-color: #585247;
     color: black;
     border-top: 10px;
-    position: relative;
 }
 
 div.maintext{
