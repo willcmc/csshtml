@@ -6,8 +6,8 @@ body,html{
 }
 div.box{background:#e3dfd2; size: cover;}
 .wrap{
-  position:relative;
-  right:0px;
+  position: absolute;
+  right:13vw;
   width: 80vmin; height:80vmin;
   margin:0 auto;
   background:inherit;

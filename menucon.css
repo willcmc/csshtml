@@ -4,9 +4,10 @@ body,html{
     height:100%;
     background:#e3dfd2;
   }
-  div.box{background:#e3dfd2; size: cover;}
+  div.box{background:#e3dfd2; size: cover; padding-bottom: 100vh}
   .wrap{
-   position:relative;
+   position: relative; 
+   right:13vw;
    width: 80vmin; height:80vmin;
    margin:0 auto;  
    background:inherit;

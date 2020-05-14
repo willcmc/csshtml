@@ -8,9 +8,10 @@ body,html{
     transform-style: preserve-3d;
 }
 
-div.box{background:#e3dfd2; size: cover;}
+div.box{background:#e3dfd2; size: cover;padding-bottom: 100vh}
 .wrap{
-  position:relative;
+  position: absolute;
+  right:13vw;
   width: 80vmin; height:80vmin;
   margin:0 auto;
   background:inherit;
